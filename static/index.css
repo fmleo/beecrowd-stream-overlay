@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+thead {
+    background-color: white;
+}
+
+td {
+    background-color: #a975ff;
+    border-left: 4px white;
+    text-align: center;
+}
+
+table {
+    border: 4px solid white
+}
+
+.username {
+    width: 10vw;
+}

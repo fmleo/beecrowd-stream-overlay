@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', path='/index.css') }}">
+</head>
+<body>
+
+<table>
+    <thead>
+    <tr>
+        <th class="position">pos</th>
+        <th class="username">nome</th>
+        <th class="solved_count">resolvidos</th>
+        <th class="attempted_count">tentativas</th>
+        <th class="submissions_count">submissoes</th>
+        <th class="score">pontos</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td class="position"></td>
+        <td class="username"></td>
+        <td class="solved_count"></td>
+        <td class="attempted_count"></td>
+        <td class="submissions_count"></td>
+        <td class="score"></td>
+    </tr>
+    </tbody>
+</table>
+
+<script>
+    const websocket = new WebSocket("{{socket_url}}")
+</script>
+<script src="{{ url_for('static', path='/main.js') }}">
+</script>
+</body>
+</html>
